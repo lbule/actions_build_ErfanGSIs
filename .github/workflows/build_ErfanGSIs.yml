@@ -8,8 +8,8 @@ env:
   ROM_URL: https://nchc.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-STABLE-RELEASES/MIUIv12/xiaomi.eu_multi_HMK20MI9T_V12.0.2.0.QFJCNXM_v12-10.zip
   ROM_NAME: MIUI
   TZ: Asia/Shanghai
-  ROM_AONLY-NAME: K20_Aonly_12.0.2.0-eu.7z
-  ROM_AB-NAME: K20_AB_12.0.2.0-eu.7z
+  ROM_AONLY: K20_Aonly_12.0.2.0-eu.7z
+  ROM_AB: K20_AB_12.0.2.0-eu.7z
 
 jobs:
   build:
@@ -47,25 +47,25 @@ jobs:
          run: sudo ./ErfanGSIs/url2GSI.sh -a $ROM_URL $ROM_NAME
        
        - name: 7z Aonly GSI
-         run: 7za a -t7z -r $ROM_AONLY-NAME ErfanGSIs/output/*.img
+         run: 7za a -t7z -r $ROM_AONLY ErfanGSIs/output/*
        
        - name: Upload Aonly GSI to WeTransfer
          run: |
               curl -sL https://git.io/file-transfer | sh
-              ./transfer wet $ROM_AONLY-NAME
+              ./transfer wet $ROM_AONLY
            
-       - name: Clear output
-         run: sudo rm -rf ErfanGSIs/output/*
+#       - name: Clear output
+#         run: sudo rm -rf ErfanGSIs/output/*
          
-       - name: Download Stock Rom & Generate AB GSI
-         run: sudo ./ErfanGSIs/url2GSI.sh -b $ROM_URL $ROM_NAME
+#       - name: Download Stock Rom & Generate AB GSI
+#         run: sudo ./ErfanGSIs/url2GSI.sh -b $ROM_URL $ROM_NAME
 
-       - name: 7z AB GSI
-         run: 7za a -t7z -r $ROM_AB-NAME ErfanGSIs/output/*.img
+#       - name: 7z AB GSI
+#         run: 7za a -t7z -r $ROM_AB ErfanGSIs/output/*
 
-       - name: Upload AB GSI to WeTransfer
-         run: |
-              curl -sL https://git.io/file-transfer | sh
-              ./transfer wet $ROM_AB-NAME
+#       - name: Upload AB GSI to WeTransfer
+#         run: |
+#              curl -sL https://git.io/file-transfer | sh
+#              ./transfer wet $ROM_AB
          
             
