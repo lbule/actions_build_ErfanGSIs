@@ -68,7 +68,7 @@ jobs:
 
        - name: Tgz AB GSI
          if: env.BUILD_AB == 'true'
-         run: tar -zcvf $ROM_AONLY ErfanGSIs/output/*
+         run: tar -zcvf $ROM_AB ErfanGSIs/output/*
 
        - name: Upload AB GSI to WeTransfer
          if: env.BUILD_AB == 'true'
