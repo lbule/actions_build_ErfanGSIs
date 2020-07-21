@@ -5,11 +5,11 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://nchc.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-WEEKLY-RELEASES/20.7.16/xiaomi.eu_multi_HMK20ProMI9TPro_20.7.16_v12-10.zip
+  ROM_URL: https://download.meizu.com/Firmware/Flyme/16s/8.20.7.21/cn_daily/20200721002012/64687c0e/update.zip
   ROM_NAME: MIUI
   BUILD_AB: false
   BUILD_AONLY: true
-  ROM_AONLY: K20P_Aonly_20.7.16-eu.7z
+  ROM_AONLY: F16S_Aonly_8.20.7.21.7z
   ROM_AB: K20P_AB_20.7.16-eu.7z
 
 jobs:
