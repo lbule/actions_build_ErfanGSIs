@@ -9,8 +9,8 @@ env:
   ROM_NAME: MIUI
   BUILD_AB: false
   BUILD_AONLY: true
-  ROM_AONLY: K20P_Aonly_20.7.16-eu.tar.gz
-  ROM_AB: K20P_AB_20.7.16-eu.tar.gz
+  ROM_AONLY: K20P_Aonly_20.7.16-eu.7z
+  ROM_AB: K20P_AB_20.7.16-eu.7z
 
 jobs:
   build:
