@@ -5,11 +5,11 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://jaist.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-WEEKLY-RELEASES/20.7.30/xiaomi.eu_multi_MIMAX3_20.7.30_v12-10.zip
-  ROM_NAME: MIUI
+  ROM_URL: https://coloroswebsitefs.coloros.com/coloroswebsite-coloros-com/grs_20200702115312/PBEM00_11_OTA_3130_all_8IDLfNksVmGl.ozip
+  ROM_NAME: ColorOS
   BUILD_AB: false
   BUILD_AONLY: true
-  ROM_AONLY: MAX3_Aonly_20.7.30-eu.7z
+  ROM_AONLY: R17_Aonly_F-13.7z
   ROM_AB: K20P_AB_20.7.16-eu.7z
 
 jobs:
@@ -36,7 +36,7 @@ jobs:
             sudo -E apt-get -qq install git openjdk-8-jdk p7zip gzip
        
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git
+         run: git clone --recurse-submodules https://github.com/HitaloSama/ErfanGSIs.git
        
        - name: Setting up ErfanGSI requirements
          run: |
