@@ -5,7 +5,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://liquidtelecom.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-STABLE-RELEASES/MIUIv12/xiaomi.eu_multi_MI9Pro5G_V12.0.3.0.QFXCNXM_v12-10.zip
+  ROM_URL: https://bigota.d.miui.com/V12.0.2.0.QFKCNXM/miui_RAPHAEL_V12.0.2.0.QFKCNXM_21d95d47d1_10.0.zip
   ROM_NAME: MIUI
   BUILD_AB: ture
   BUILD_AONLY: false
