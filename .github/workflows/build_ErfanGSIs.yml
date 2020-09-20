@@ -5,12 +5,12 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://bigota.d.miui.com/9.12.19/miui_CRUX_9.12.19_369cb91c4a_9.0.zip
+  ROM_URL: https://bigota.d.miui.com/20.9.17/miui_CRUX_20.9.17_6a917ec27d_10.0.zip
   ROM_NAME: MIUI
   BUILD_AB: true
   BUILD_AONLY: true
   ROM_AONLY: MIUI12_Aonly_QJVCNXM.7z
-  ROM_AB: MIUI12_AB_QJVCNXM.7z
+  ROM_AB: MIUI12_AB_20.9.17.7z
 
 jobs:
   build:
