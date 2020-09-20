@@ -5,10 +5,10 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://bigota.d.miui.com/V12.0.2.0.QFKCNXM/miui_RAPHAEL_V12.0.2.0.QFKCNXM_21d95d47d1_10.0.zip
+  ROM_URL: http://bigota.d.miui.com/20.9.17/miui_CEPHEUS_20.9.17_d76c964063_10.0.zip
   ROM_NAME: MIUI
-  BUILD_AB: ture
-  BUILD_AONLY: false
+  BUILD_AB: true
+  BUILD_AONLY: true
   ROM_AONLY: MIUI12_Aonly_QJVCNXM.7z
   ROM_AB: MIUI12_AB_QJVCNXM.7z
 
