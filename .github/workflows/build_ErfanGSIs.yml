@@ -5,12 +5,12 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://bigota.d.miui.com/20.9.4/miui_MIMIX3_20.9.4_9b9a07c611_10.0.zip
+  ROM_URL: https://bigota.d.miui.com/V11.0.5.0.PFBCNXM/miui_GRUS_V11.0.5.0.PFBCNXM_41b4612800_9.0.zip
   ROM_NAME: MIUI
   BUILD_AB: true
   BUILD_AONLY: true
-  ROM_AONLY: MIUI12_Aonly_QJVCNXM.7z
-  ROM_AB: MIUI12_AB_MIMIX3_20.9.4.7z
+  ROM_AONLY: MIUI12_Aonly_V11.0.5.0.PFBCNXM.7z
+  ROM_AB: MIUI12_AB_V11.0.5.0.PFBCNXM.7z
 
 jobs:
   build:
