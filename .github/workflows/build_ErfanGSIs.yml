@@ -5,12 +5,12 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://bigota.d.miui.com/V11.0.3.0.PFXCNXM/miui_CRUX_V11.0.3.0.PFXCNXM_8f15c954be_9.0.zip
-  ROM_NAME: MIUI
+  ROM_URL: https://dl3.smartisan.com/ota/rls.delta-ard10-mol-7.5.0-20200810-SEKSA.delta-user/202008192326/7.5.0-202008192058-user-dlt-7aefac6cd8.zip
+  ROM_NAME: Generic
   BUILD_AB: true
   BUILD_AONLY: true
-  ROM_AONLY: MIUI12_Aonly_V11.0.3.0.PFXCNXM.7z
-  ROM_AB: MIUI12_AB_V11.0.3.0.PFXCNXM.7z
+  ROM_AONLY: Smartisan-OS_Aonly.7z
+  ROM_AB: Smartisan-OS_AB.7z
 
 jobs:
   build:
